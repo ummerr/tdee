@@ -3,7 +3,9 @@ get '/reports/?' do
 end
 
 post '/reports' do
-
+  @report = Report.create(params[:report])
+  current_user.reports << @report
+  redirect '/reports'
 end
 
 get '/reports/all' do
