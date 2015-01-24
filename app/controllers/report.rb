@@ -9,7 +9,8 @@ post '/reports' do
 end
 
 get '/reports/all' do
-
+  @reports = current_user.reports
+  erb :'reports/all'
 end
 
 get '/reports/:id' do |id|
