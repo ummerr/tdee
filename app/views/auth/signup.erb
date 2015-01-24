@@ -1,6 +1,21 @@
 <form id='signup' action='/signup' method='POST'>
-  Username: <input type="text" name="user[name]">
-  Password: <input type="password" name="user[password]">
-  Confirm Password: <input type="password" name="user[password_confirmation">
-  <input type="submit">
+  <div class='detail'>
+    Username: <input type="text" name="user[name]">
+  </div>
+  <div class='detail'>
+      Male: <input type='radio' name='user[gender]'>
+      Female: <input type='radio' name='user[gender]'>
+  </div>
+  <div class='detail'>
+    Date of Birth: <input type='date' name='user[birthday]'>
+  </div>
+  <div class='detail'>
+    Password: <input type="password" name="user[password]">
+  </div>
+  <div class='detail'>
+    Confirm Password: <input type="password" name="user[password_confirmation">
+  </div>
+  <div class='detail'>
+    <input type="submit">
+  </div>
 </form>

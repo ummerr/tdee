@@ -1,5 +1,5 @@
 get '/reports/?' do
-
+  erb :'reports/main'
 end
 
 post '/reports' do

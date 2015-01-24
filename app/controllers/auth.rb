@@ -11,7 +11,7 @@ post '/login' do
 
   if user.try(:authenticate, params[:user][:password])
     session[:user_id] = user.id
-    redirect '#'
+    redirect '/reports'
   else
     redirect '/login'
   end
@@ -27,7 +27,7 @@ post '/signup' do
 
   if user.save
     session[:user_id] = user.id
-    redirect '#'
+    redirect '/reports'
   else
     redirect '/signup'
   end
