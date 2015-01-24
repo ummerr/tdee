@@ -7,6 +7,7 @@ class CreateReports < ActiveRecord::Migration
       t.string :height
       t.string :gender
 
+      t.string :intake
 
       # t.string :intake BEFORE SAVE METHOD
 
@@ -14,3 +15,5 @@ class CreateReports < ActiveRecord::Migration
     end
   end
 end
+
+
