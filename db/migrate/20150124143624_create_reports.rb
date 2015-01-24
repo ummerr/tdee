@@ -5,6 +5,8 @@ class CreateReports < ActiveRecord::Migration
       t.string :age
       t.string :weight
       t.string :height
+      t.string :gender
+
 
       # t.string :intake BEFORE SAVE METHOD
 
