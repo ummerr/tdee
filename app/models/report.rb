@@ -7,6 +7,7 @@ class Report < ActiveRecord::Base
   end
 
   private
+
     def calculate_intake
       if self.gender.downcase == 'male'
         self.intake = (10 * self.weight.to_i) + (6.25 * self.height.to_i) - (5 * self.age.to_i) + 5
@@ -14,6 +15,7 @@ class Report < ActiveRecord::Base
         self.intake = (10 * self.weight.to_i) + (6.25 * self.height.to_i) - (5 * self.age.to_i) - 161
       end
     end
+
 end
 
 

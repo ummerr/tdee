@@ -24,6 +24,8 @@
   <header>
     <div id="login-toolbar">
       <% if current_user %>
+        <a href="/reports">Create Report</a>
+        <a href="/reports/all">All Reports</a>
         <a href="/logout">Logout</a>
       <% else %>
         <a href="/login">Login</a>

@@ -1,6 +1,7 @@
 body {
   width: 90%;
   font-family: Futura;
+  background-color: #CDCDCD;
 }
 
 #content {
@@ -9,6 +10,9 @@ body {
   max-width: 37em;
   position: relative;
   width: 61.8%;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 #welcome-page {
@@ -31,6 +35,17 @@ input[type=submit] {
 .detail {
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+#report-display {
+  padding: 2em;
+  text-align: center;
+}
+
+#calories {
+  font-size: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .report-table, th, td {
