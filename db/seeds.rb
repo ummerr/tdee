@@ -1,0 +1,1 @@
+faker = User.new()
