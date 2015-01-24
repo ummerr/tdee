@@ -1,4 +1,23 @@
 <div id="report-display">
-<h1><%= @report.user.name %>'s Report on <%= @report.created_at %></h1>
+<h1><%= @report.user.name %>'s Report</h1>
 <h3> to maintain your current weight, you should eat <%= @report.intake %> calories per day</h3>
 </div>
+
+<table class="report-table">
+  <tr>
+    <th>Gender</th>
+    <th>Age</th>
+    <th>Weight (kg)</th>
+    <th>Height (cm)</th>
+    <th>Report date</th>
+  </tr>
+
+  <tr>
+    <td><%= @report.gender %></td>
+    <td><%= @report.age %></td>
+    <td><%= @report.weight %></td>
+    <td><%= @report.height %></td>
+    <td><%= @report.date_posted %></td>
+  </tr>
+
+</table>

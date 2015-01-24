@@ -32,3 +32,11 @@ input[type=submit] {
   margin-bottom: 1em;
   margin-top: 1em;
 }
+
+.report-table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 1em;
+}

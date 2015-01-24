@@ -2,6 +2,10 @@ class Report < ActiveRecord::Base
   before_save :calculate_intake
   belongs_to :user
 
+  def date_posted
+    self.created_at.strftime("%D %R %Z")
+  end
+
   private
     def calculate_intake
       if self.gender.downcase == 'male'
