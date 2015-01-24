@@ -1,0 +1,33 @@
+body {
+  width: 90%;
+  font-family: Futura;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 37em;
+  position: relative;
+  width: 61.8%;
+}
+
+#welcome-page {
+  text-align: center;
+}
+
+.auth {
+  padding: 0.5em;
+}
+
+input[type=submit] {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.detail {
+  margin-bottom: 1em;
+}
