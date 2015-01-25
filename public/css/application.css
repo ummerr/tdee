@@ -1,21 +1,19 @@
 * {
-  /*border: 1px dotted blue;*/
-}
+/*  border: 1px dotted blue;
+*/}
 
 body {
   width: 90%;
   font-family: Futura;
-  background-color: #CDCDCD;
 }
 
 #content {
   margin: 0 auto;
-  padding: 0 1em;
-  padding-top: 2em;
   position: relative;
   width: 61.8%;
   background-color: #FFFFFF;
   border-radius: 10px;
+  padding: 2em;
 }
 
 #welcome-page {
@@ -26,6 +24,7 @@ body {
 #login-toolbar {
   height: 3em;
   padding-left: 1em;
+  font-size: 1.5em;
 }
 
 #login-toolbar a {
@@ -35,20 +34,31 @@ body {
 
 #login-toolbar a:last-child {
   float: right;
-  margin-right: 0px;
   padding-right: 2em;
+}
+
+form {
+  font-size: 1.8em;
+  width: 75%;
 }
 
 form#login {
   margin: 0 auto;
-  width: 50%;
   text-align: center;
 }
 
 form#signup {
   margin: 0 auto;
-  width: 50%;
   text-align: center;
+}
+
+form#create-report {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#create-report-page {
+  padding: 2em;
 }
 
 .auth {
