@@ -4,7 +4,7 @@
 
 body {
   width: 90%;
-  font-family: Futura;
+  font-family: 'Cabin', sans-serif;
 }
 
 #content {
@@ -109,4 +109,16 @@ th, td {
 
 .all-reports {
   padding-top: 1em;
+}
+
+.report-landing {
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+  font-size: 1.53em;
+}
+
+.show-report-form {
+  margin: 0 auto;
+
 }
