@@ -15,29 +15,7 @@ $(document).ready(function() {
       type: $form.attr('method'),
       data: $form.serialize()
     }).done(function(response) {
-      console.log("monkeys");
-    });
-  });
-
-    $("#say").submit(function(event) {
-    event.preventDefault();
-
-    $form = $(event.target);
-    $.ajax({
-      url: $form.attr('action'),
-      type: $form.attr('method'),
-      data: $form.serialize()
-    })
-    .done(function(response) {
-      $('#grandma_says').html(response).hide();
-      $('#grandma_says').fadeIn("slow")
-      console.log(response);
-    })
-    .fail(function() {
-      console.log("error");
-    })
-    .always(function() {
-      console.log("complete");
+      $('.all-reports').prepend(response);
     });
   });
 

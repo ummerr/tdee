@@ -30,3 +30,9 @@
   </form>
 </div>
 
+<div class='all-reports'>
+  <% @reports.each do |report| %>
+    <%= p report.intake %>
+  <% end %>
+
+</div>
