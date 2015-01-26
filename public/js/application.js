@@ -5,7 +5,11 @@ $(document).ready(function() {
     $(this).hide();
   });
 
-  $('form#')
+  $('form.auth-login').submit(function(event) {
+    event.preventDefault();
+    $('form#login').show('slow');
+    $('div#auth-buttons').toggle();
+  })
 
   $('form#create-report').submit(function(event) {
     event.preventDefault();
