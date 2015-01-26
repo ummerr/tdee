@@ -5,7 +5,9 @@ end
 post '/reports' do
   @report = Report.create(params[:report])
   current_user.reports << @report
-  redirect "/reports/#{@report.id}"
+
+  @reports
+
 end
 
 get '/reports/all' do
