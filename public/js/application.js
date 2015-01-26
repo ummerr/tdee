@@ -11,6 +11,12 @@ $(document).ready(function() {
     $('div#auth-buttons').toggle();
   })
 
+  $('form.auth-signup').submit(function(event) {
+    event.preventDefault();
+    $('form#signup').show('slow');
+    $('div#auth-buttons').toggle();
+  })
+
   $('form#create-report').submit(function(event) {
     event.preventDefault();
 

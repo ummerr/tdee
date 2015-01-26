@@ -48,11 +48,14 @@ form#login {
   margin: 0 auto;
   text-align: center;
   display: none;
+
 }
 
 form#signup {
   margin: 0 auto;
   text-align: center;
+  display: none;
+
 }
 
 form#create-report {
