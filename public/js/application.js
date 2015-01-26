@@ -10,12 +10,12 @@ $(document).ready(function() {
 
     $form = $(event.target);
 
-    ajaxRequest = $.ajax({
+    $.ajax({
       url: $form.attr('action'),
       type: $form.attr('method'),
       data: $form.serialize()
     }).done(function(response) {
-      $('.all-reports').prepend(response);
+      console.log(response);
     });
   });
 
