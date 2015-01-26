@@ -83,7 +83,7 @@ input[type=submit] {
   margin-top: 1em;
 }
 
-#report-display {
+.report-display {
   padding: 2em;
   text-align: center;
 }

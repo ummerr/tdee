@@ -5,7 +5,14 @@ end
 post '/reports' do
   @report = Report.create(params[:report])
   current_user.reports << @report
-  redirect "/reports/#{@report.id}"
+
+  if request.xhr?
+    @reports = current_user.reports
+    erb :"/reports/_report", locals: {report: @report, reports: @reports }, layout: false
+  else
+    redirect "reports/#{@report.id}"
+  end
+
 end
 
 get '/reports/all' do
