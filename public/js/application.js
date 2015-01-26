@@ -16,6 +16,8 @@ $(document).ready(function() {
       data: $form.serialize()
     }).done(function(response) {
       console.log(response);
+      $('.main-report-display').append(response);
+      $('.main-report-display').show('slow');
     });
   });
 
