@@ -7,8 +7,7 @@ post '/reports' do
   current_user.reports << @report
 
   if request.xhr?
-    @reports = current_user.reports
-    erb :"/reports/_report", locals: {report: @report, reports: @reports }, layout: false
+    erb :"/reports/_report", locals: {report: @report}, layout: false
   else
     redirect "reports/#{@report.id}"
   end

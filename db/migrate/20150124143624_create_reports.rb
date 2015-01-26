@@ -9,7 +9,6 @@ class CreateReports < ActiveRecord::Migration
 
       t.string :intake
 
-      # t.string :intake BEFORE SAVE METHOD
 
       t.timestamps
     end
