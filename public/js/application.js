@@ -5,6 +5,8 @@ $(document).ready(function() {
     $(this).hide();
   });
 
+  $('form#')
+
   $('form#create-report').submit(function(event) {
     event.preventDefault();
 

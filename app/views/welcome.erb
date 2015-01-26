@@ -4,13 +4,23 @@
   <p>Welcome to How Much Should I Eat? (HMSIE).</p>
   <p>HMSIE is a place where you can figure out how much you should be eating in order to reach or maintain your target weight.</p>
 
-    <form class='auth' action="/login">
+    <form class='auth-login' action="/login">
       <input type="submit" value="Login">
     </form>
 
-    <form class='auth' action="/signup">
+    <form class='auth-signup' action="/signup">
       <input type="submit" value="Signup">
     </form>
-
-
 </div>
+
+<form id='login' action='/login' method='POST'>
+  <div class='detail'>
+    Username: <input type="text" name="user[name]">
+  </div>
+  <div class='detail'>
+    Password: <input type="password" name="user[password]">
+  </div>
+  <div class='detail'>
+    <input type="submit">
+  </div>
+</form>

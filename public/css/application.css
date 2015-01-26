@@ -47,6 +47,7 @@ form {
 form#login {
   margin: 0 auto;
   text-align: center;
+  display: none;
 }
 
 form#signup {
@@ -63,7 +64,12 @@ form#create-report {
   padding: 2em;
 }
 
-.auth {
+.auth-login {
+  padding: 0.5em;
+  margin: 0 auto;
+}
+
+.auth-signup {
   padding: 0.5em;
   margin: 0 auto;
 }
