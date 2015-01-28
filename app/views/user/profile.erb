@@ -1,0 +1,10 @@
+<div class='profile-page'>
+  <h1><%= current_user.name %>'s Profile</h1>
+
+  <h2>Your most recent BMR is <%= current_user.reports.last.intake %></h2>
+
+  <h2>Your goal weight is INSERT GOAL WEIGHT HERE</h2>
+  <h2>Are you trying to lose weight or gain weight?</h2>
+  <button>Lose</button>
+  <button>Gain</button>
+</div>
