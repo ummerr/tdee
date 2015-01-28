@@ -1,6 +1,6 @@
 * {
-/*  border: 1px dotted blue;
-*/}
+  border: 1px dotted blue;
+}
 
 body {
   width: 90%;
@@ -59,6 +59,11 @@ form#signup {
 }
 
 form#create-report {
+  margin: 0 auto;
+  text-align: center;
+}
+
+form#create-goal {
   margin: 0 auto;
   text-align: center;
 }
@@ -146,3 +151,14 @@ th, td {
   width: 50%;
   text-align: center;
 }
+
+.profile-page {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.weight-goal {
+  margin: 0 auto;
+  text-align: center;
+/*  display: none;
+*/}
