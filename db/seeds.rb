@@ -1,2 +1,3 @@
-r = Report.new(gender: "Male", weight: "79.38", height: "193.04", age: "28")
-s = Report.new(gender: "FeMale", weight: "79.38", height: "193.04", age: "28")
+5.times do
+  User.create(name: Faker::Name.name, password: 'password', password: 'password', email: Faker::Internet.email, gender: ['male','female'].sample)
+end
